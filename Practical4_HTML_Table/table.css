@@ -1,0 +1,22 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+}
+
+tr:nth-child(odd) {
+    background-color: #eddcdc;
+}
+
+.time {
+    font-weight: bold;
+    background-color: #e8e3e3;
+}
+
+th{
+    background-color: #e8e3e3;
+}
