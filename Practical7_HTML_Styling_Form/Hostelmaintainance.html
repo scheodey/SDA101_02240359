@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Maintenance Form</title>
+</head>
+<body>
+    <h1>Hostel Maintenance Form</h1>
+    <form action="Maintenance">
+        <label for="Name">Name: </label>
+        <input type="text" required><br><br>
+
+        <label for="Room No">Room No: </label>
+        <select name="room_no">
+            <option value="1">New Building 1</option>
+            <option value="2">New Building 2</option>
+            <option value="3">Common Mess</option>
+            <option value="4">Executive</option>
+        </select><br><br>
+
+        <label for="type of issue">Type of Issues: </label>
+        <input type="text"><br><br>
+
+        <label for="description">Description:</label>
+        <input type="text"><br><br>
+
+        <label for="urgency">Urgency: </label>
+        <select name="Urgency" >
+            <option value="A">Immediate</option>
+            <option value="B">Medium</option>
+            <option value="C">Low</option>
+        </select><br><br>
+
+        <input type="Submit" value="submit">
+    </form>
+</body>
+</html>
