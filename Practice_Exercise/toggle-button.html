@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Button Example</title>
+    <script src="toggle-button.js" defer></script>
+</head>
+<body>
+    <toggle-button></toggle-button>
+    <script>
+        // Listen for the custom event
+        document.querySelector('toggle-button').addEventListener('toggle-changed', (event) => {
+            console.log('Toggle state changed:', event.detail.state);
+        });
+    </script>
+</body>
+</html>

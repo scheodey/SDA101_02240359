@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Card Component</title>
+  <script src="Script.js" defer></script>
+</head>
+<body>
+
+  <!-- Using the custom card component -->
+  <custom-card style="--card-bg-color: #e3f2fd; --header-bg-color: #bbdefb; --footer-bg-color: #90caf9;">
+    <!-- Custom content for each slot -->
+    <div slot="header">My Custom Header</div>
+    <div slot="content">
+      <p>This is some custom content for the body of the card.</p>
+      <img src="group.jpeg" alt="Image" />
+    </div>
+    <div slot="footer">My Custom Footer</div>
+  </custom-card>
+
+  <custom-card>
+    <!-- Default content for the second card -->
+    <div slot="header">Header 2</div>
+    <div slot="content">
+      <p>This is a second card with default footer styling.</p>
+    </div>
+  </custom-card>
+
+</body>
+</html>

@@ -1,0 +1,318 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  color: #333;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed; /* Fix the sidebar to the viewport */
+  top: 0;
+  left: 0;
+  height: 100vh; /* Full viewport height */
+  width: 20%;
+  background-color: #2a3b54;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar img {
+  width: 60px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+
+.sidebar h2 {
+  margin-bottom: 40px;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+}
+
+.sidebar nav a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.sidebar nav a:hover {
+  background-color: #3c506d;
+}
+
+.sidebar .progress-badge {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.sidebar .progress-badge img {
+  width: 70px;
+}
+
+/* Main content */
+.main-content {
+  margin-left: 20%; /* Adjust for sidebar width */
+  width: 80%;
+  padding: 20px;
+  background: linear-gradient(to bottom, #cfd9df, #e2ebf0);
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header .search-box {
+  display: flex;
+  align-items: center;
+  background-color: #e2e2e2;
+  padding: 8px 12px;
+  border-radius: 20px;
+}
+
+.header .search-box input {
+  border: none;
+  outline: none;
+  background: none;
+  margin-left: 8px;
+}
+
+.header .profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Profile Container */
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Spacing between profile-card and profile-section */
+}
+
+/* Profile Card */
+.profile-card {
+  position: relative;
+  background-size: cover;
+  border-radius: 10px;
+  color: #333;
+  padding: 40px;
+  text-align: center;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-card img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: 5px solid white;
+  margin-bottom: 15px;
+}
+
+.profile-card h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.profile-card p {
+  font-size: 18px;
+  color: #666;
+}
+
+.assignments-button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #3c506d;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.assignments-button:hover {
+  background-color: #2a3b54;
+}
+
+/* Profile Section */
+.profile-section {
+  background: linear-gradient(135deg, #2f4f4f, #4682b4);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  height: 500px;
+  align-items: center;
+}
+
+.about-text {
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.about-details p {
+  font-size: 1rem;
+  margin: 8px 0;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+}
+
+.about-details p i {
+  margin-right: 8px;
+}
+
+/* Divider Image */
+.proj {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+}
+.proj .divider-image {
+  width: 325px; /* Full width of the container */
+  max-width: 400px; /* Adjust as needed */
+  margin: 20px auto; /* Centered with spacing above and below */
+  display: block;
+  border-radius: 0px;
+}
+
+/* Services Section */
+.services-section {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f3f4f6;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.services-section h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.service-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 30%;
+}
+
+.service-card h3 {
+  font-size: 18px;
+  color: #2a3b54;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Services Section */
+.services-section {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f3f4f6;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.services-section h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.service-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.service-card img {
+  width: 100%; 
+  height: auto; 
+  max-height: 150px; 
+  object-fit: contain; 
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #2a3b54;
+  color: white;
+  font-size: 14px;
+  border-radius: 8px;
+}
+
+.footer .social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.footer .social-icons a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer .social-icons a:hover {
+  color: #aaa;
+}
+
